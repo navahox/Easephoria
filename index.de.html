@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Easephoria installiert transparente LED-Fensterdisplays in Baden-Württemberg — maximale Sichtbarkeit bei natürlichem Lichteinfall."
+    />
+    <title>Easephoria | Integrierte LED-Signage für hochwertige Räume</title>
+    <link rel="stylesheet" href="Easephoria.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="nav">
+          <div class="brand">
+            <div class="logo" aria-label="Easephoria Logo">
+              <img
+                src="logo/Easephoria_white_transparent_bckgrnd.png"
+                alt="Easephoria Logo"
+              />
+            </div>
+            <div>
+              <strong>Easephoria</strong>
+              <span>Premium-Sichtbarkeit für moderne Räume</span>
+            </div>
+          </div>
+
+          <div class="nav-cta">
+            <button
+              class="menuBtn"
+              id="menuBtn"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+            >
+              Menü
+            </button>
+
+            <a class="btn" href="./index.html">EN</a>
+            <a class="btn" href="#results">Ergebnis</a>
+            <a class="btn" href="./amplify/amplify.de.html">Amplify</a>
+            <a class="btn primary" href="#contact">Angebot anfragen</a>
+          </div>
+        </div>
+
+        <nav class="mobileMenu" id="mobileMenu" aria-label="Seite">
+          <a href="./index.html">EN</a>
+          <a class="btn primary" href="./amplify/amplify.html">Amplify</a>
+          <a href="#results">Ergebnis</a>
+          <a href="#why">Warum jetzt</a>
+          <a href="#benefits">Vorteile</a>
+          <a href="#process">Ablauf</a>
+          <a href="#industries">Branchen</a>
+          <a class="btn primary" href="#contact">Angebot anfragen</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div class="heroGrid">
+            <div class="glass sheen heroCard">
+              <div class="kicker">
+                <span class="dot"></span> Integrierte LED-Signage für hochwertige Räume • Baden-Württemberg
+              </div>
+              <h1>Machen Sie Ihren Standort zu einem Premium-Digitalerlebnis.</h1>
+              <p class="sub">
+                Easephoria plant und installiert integrierte LED-Signage – von Schaufenster-Lösungen bis zu Innenraum-Feature-Walls – damit Ihre Fläche hochwertig wirkt und Ihre Botschaft unübersehbar wird. Gemacht für moderne Ladenflächen, Showrooms und stark frequentierte Standorte.
+              </p>
+
+              <div class="heroActions">
+                <a class="btn primary" href="#contact">Angebot anfragen</a>
+                <a class="btn" href="#results">Ergebnis ansehen</a>
+              </div>
+
+              <div class="trustRow" aria-label="Vertrauenspunkte">
+                <span class="pill">Maßgeschneiderte Installation</span>
+                <span class="pill">Premium, minimaler Look</span>
+                <span class="pill">Content-ready Display</span>
+                <span class="pill">Für maximale Aufmerksamkeit</span>
+              </div>
+            </div>
+
+            <div class="glass heroVisual">
+                            <div class="frame">
+                <video
+                  class="heroVideo"
+                  src="./media/hero3.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  aria-label="Transparent LED window display demo video"
+                ></video>
+
+                <div class="scan"></div>
+                <div class="mockLabel">Visuelle Vorschau</div>
+                <div class="caption">
+                  <div class="badge">Zeigen Sie Ihre Marke in Bewegung.</div>
+                  <!--<div class="mini">
+                    
+                  </div>-->
+                </div>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap">
+                <span class="pill">Einzelhandel</span>
+                <span class="pill">Gastronomie</span>
+                <span class="pill">Immobilien</span>
+                <span class="pill">Unternehmen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Das Ergebnis</h2>
+              <p class="lead">
+                Ein klarer, futuristischer Look, der Aufmerksamkeit erzeugt – ohne Ihren Raum zu überladen oder die Architektur zu beeinträchtigen.
+              </p>
+            </div>
+            <a class="btn" href="#contact">Angebot anfragen</a>
+          </div>
+
+          <div class="gallery">
+            <div class="glass resultBox">
+              <div class="tag">
+                <span class="spark"></span> Vorher / Nachher Vorschau
+              </div>
+              <div class="slider" aria-label="Vorher/Nachher Slider">
+                <div class="slide beforeLayer">
+                    <img class="slideMedia" src="./media/before_after_pic.png" alt="Vorher Installation" />
+                  <div
+                    style="position: absolute; left: 14px; bottom: 14px"
+                    class="badge"
+                  >
+                    Vorher
+                  </div>
+                </div>
+
+                <div class="afterClip" id="afterClip">
+                  <div class="slide afterLayer">
+                    <video class="slideMedia" src="./media/before_after_smaller.mp4" autoplay muted loop playsinline></video>
+                    <div
+                      style="position: absolute; right: 14px; bottom: 14px"
+                      class="badge"
+                    >
+                      Nachher
+                    </div>
+                  </div>
+                </div>
+
+                <div class="handle" id="handle"></div>
+                <div class="knob">ZIEHEN</div>
+              </div>
+
+              <div class="range">
+                <input
+                  id="range"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  aria-label="Vorher/Nachher Position"
+                />
+              </div>
+            </div>
+
+            <div class="glass resultBox">
+              <div class="tag">
+                <span class="spark"></span> Was sich verändert, wenn Ihr Standort zum digitalen Erlebnis wird
+              </div>
+              <ul class="bullets">
+                <li>
+                  <strong>Mehr Aufmerksamkeit auf Straßenniveau</strong> durch
+                  Bewegung und Licht—besonders nachts.
+                </li>
+                <li>
+                  <strong>Premium Markenauftritt</strong>, der architektonisch
+                  wirkt, nicht „laut“.
+                </li>
+                <li>
+                  <strong>Stärkere Differenzierung</strong> an umkämpften
+                  Standorten und belebten Straßen.
+                </li>
+                <li>
+                  <strong>Social-ready Visuals</strong>, welche ganz natürlich gefilmt und geteilt werden.
+                </li>
+              </ul>
+
+              <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap">
+                <span class="pill">High-Impact Ästhetik</span>
+                <span class="pill">Modernes „Next Era“-Gefühl</span>
+                <span class="pill">Für Sichtbarkeit gebaut</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Warum das die Zukunft ist</h2>
+              <p class="lead">
+                Städte werden heller, schneller und visueller. Unternehmen, die
+                Aufmerksamkeit gewinnen, wirken wie aus der Zukunft.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid3">
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Aufmerksamkeit ist visuell</div>
+              <h3>Bewegung schlägt statisch.</h3>
+              <p>
+                In belebten Straßen zieht Motion automatisch den Blick an — ohne
+                größere Schilder oder lauteres Branding.
+              </p>
+            </div>
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Standorte werden zu Medien</div>
+              <h3>Jede Fläche kann eine Geschichte erzählen.</h3>
+              <p>
+                Von Glas und Eingängen bis zu Feature-Walls und Innenräumen: Ihre Fläche wird zur lebendigen Bühne für Markenmomente, Aktionen und Produkthighlights.
+              </p>
+            </div>
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Zukunftssichere Präsenz</div>
+              <h3>Modern, aber trotzdem premium.</h3>
+              <p>
+                Wir halten die Ästhetik clean: dezentes Leuchten, gestochen scharfe Inhalte und ein Finish, das zu hochwertigen Umgebungen passt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Was es für Ihr Business bringt</h2>
+              <p class="lead">
+                Ästhetische Wirkung ist der Einstieg. Sichtbarkeit und
+                Differenzierung sind das Ergebnis.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid3">
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Sichtbarkeit</div>
+              <h3>Schon von weiter weg sichtbar.</h3>
+              <p>
+                Machen Sie aus Laufkundschaft kurze Blicke echte „Stop-and-look“-Momente – mit Klarheit am Tag und Präsenz bei Nacht.
+              </p>
+            </div>
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Conversion</div>
+              <h3>Aktionen sofort aktualisieren.</h3>
+              <p>
+                Neue Angebote, saisonale Visuals oder Drops starten—ohne
+                etwas neu zu drucken.
+              </p>
+            </div>
+            <div class="glass card">
+              <div class="tag"><span class="spark"></span> Markenwert</div>
+              <h3>Wirken Sie wie die Premium-Option.</h3>
+              <p>
+                Ein cleaner, futuristischer Auftritt signalisiert Modernität und
+                Qualität — Menschen merken es, erinnern sich und kommen wieder.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 12px" class="glass card">
+            <div class="tag">
+              <span class="spark"></span> Social-Faktor (ohne es zu erzwingen)
+            </div>
+            <p style="margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7">
+              Wenn das Schaufenster „next era“ aussieht, filmen es Menschen.
+              Diese organische Aufmerksamkeit kann Ihre Reichweite steigern—
+              besonders in Lagen mit viel Laufkundschaft. Entscheidend sind
+              tasteful Content und ein Premium-Finish.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Einfacher Ablauf</h2>
+              <p class="lead">
+                Klarer Weg von der Idee bis zur Installation—für vielbeschäftigte
+                Geschäftsinhaber.
+              </p>
+            </div>
+          </div>
+
+          <div class="steps">
+            <div class="glass step">
+              <div class="stepNum">1</div>
+              <h3 style="margin: 0 0 8px; font-size: 14px">
+                Kurzberatung + Vor-Ort-Check
+              </h3>
+              <p style="margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6">
+                WWir klären Ihr Ziel, nehmen die wichtigsten Maße und prüfen, was in Ihrer Fläche sinnvoll umsetzbar ist (Position, Sichtbarkeit, Kabelführung).
+              </p>
+            </div>
+            <div class="glass step">
+              <div class="stepNum">2</div>
+              <h3 style="margin: 0 0 8px; font-size: 14px">
+                Produktempfehlung + Bestellkoordination
+              </h3>
+              <p style="margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6">
+                Auf Basis des Checks spezifizieren wir das passende System (Display, Controller/Media Player, Zubehör) und koordinieren die Bestellung mit dem Lieferanten – damit alles passend ankommt und montiert werden kann.
+              </p>
+            </div>
+            <div class="glass step">
+              <div class="stepNum">3</div>
+              <h3 style="margin: 0 0 8px; font-size: 14px">
+                Installation & Übergabe
+              </h3>
+              <p style="margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6">
+                Wir montieren, konfigurieren und testen das Gesamtsystem – und übergeben es betriebsbereit inkl. kurzer Anleitung zum Hochladen und Planen der Inhalte.
+              </p>
+            </div>
+                        <div class="glass step">
+              <h3 style="margin: 0 0 8px; font-size: 14px">
+                Optional
+              </h3>
+              <p style="margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6">
+                <strong>Content-Updates:</strong> als Abo oder on-demand – Motion-Visuals, damit Ihre Signage dauerhaft frisch bleibt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Für Premium-Spaces gemacht</h2>
+              <p class="lead">Use Cases in Baden-Württemberg und darüber hinaus.</p>
+            </div>
+          </div>
+
+          <div class="tiles">
+            <div class="tile glass">Einzelhandel</div>
+            <div class="tile glass">Showrooms</div>
+            <div class="tile glass">Immobilien</div>
+            <div class="tile glass">Gastronomie</div>
+            <div class="tile glass">Beauty</div>
+            <div class="tile glass">Unternehmen</div>
+          </div>
+        </div>
+      </section>
+
+      <section>          <!-- AMPLIFY MENTION (DE) -->
+        <div class="wrap">
+          <div class="glass card amplifyCard" style="margin-top:12px;">
+            <div class="tag"><span class="spark"></span> Mehr Leads?</div>
+            <h3><strong>Amplify</strong> — unser Remote-Marketing-Programm.</h3>
+            <p style="margin:0; color:var(--muted); font-size:13px; line-height:1.7">
+              Short-Form-Content + eine einfache Landingpage-Funnel-Struktur, die Aufmerksamkeit in <strong>messbare</strong> Anrufe, Buchungen oder Angebotsanfragen verwandelt.
+            </p>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+              <a class="btn primary" href="./amplify/amplify.de.html">Amplify ansehen</a>
+              <a class="btn" href="./amplify/amplify.de.html#pilot">30-Tage-Pilot</a>
+            </div>
+
+            <div class="pillRow" style="margin-top:12px;">
+              <span class="pill">Organic-first</span>
+              <span class="pill">Remote</span>
+              <span class="pill">Landingpage + Tracking</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="wrap">
+          <div class="sectionTitle">
+            <div>
+              <h2>Angebot anfragen</h2>
+              <p class="lead">
+                Erzählen Sie uns von Ihrer Vision. Wir melden uns mit den nächsten Schritten.
+              </p>
+            </div>
+          </div>
+
+          <div class="contactGrid">
+            <form class="glass" id="leadForm">
+              <div class="formRow">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    placeholder="Ihr Name"
+                  />
+                </div>
+                <div>
+                  <label for="business">Unternehmen</label>
+                  <input
+                    id="business"
+                    name="business"
+                    autocomplete="organization"
+                    placeholder="Firmenname (optional)"
+                  />
+                </div>
+              </div>
+
+              <div class="formRow">
+                <div>
+                  <label for="city">Stadt</label>
+                  <input
+                    id="city"
+                    name="city"
+                    autocomplete="address-level2"
+                    placeholder="z. B. Stuttgart"
+                  />
+                </div>
+                <div>
+                  <label for="email">E-Mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@company.com"
+                  />
+                </div>
+              </div>
+
+              <label for="message">Projektdetails</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Größe (ca.), Einsatzort (Schaufenster/Innenbereich), Ziel (Sichtbarkeit, Aktionen, Marke) und gewünschter Zeitrahmen."
+              ></textarea>
+
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px">
+                <button type="submit" class="btn primary" style="border: none; cursor: pointer">
+                  Anfrage senden
+                </button>
+                <a class="btn" href="mailto:hello@easephoria.com">Direkt per E-Mail</a>
+              </div>
+
+              <p class="note">
+                Dieses Formular öffnet Ihr E-Mail-Programm und erstellt eine
+                Nachricht an <strong>hello@easephoria.com</strong>.
+              </p>
+
+              <p
+                class="note"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+                style="margin-top: 10px"
+              ></p>
+            </form>
+
+            <div class="glass contactCard">
+              <h3>Kontakt</h3>
+              <p>
+                Lieber per E-Mail? Schreiben Sie uns jederzeit.
+              </p>
+
+              <ul class="miniList">
+                <li>
+                  <a href="mailto:hello@easephoria.com">
+                    <div>
+                      hello@easephoria.com<br />
+                      <span>E-Mail</span>
+                    </div>
+                    <span>↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="disabled" href="#" onclick="return false;">
+                    <div>
+                      WhatsApp<br />
+                      <span>Kommt bald</span>
+                    </div>
+                    <span>—</span>
+                  </a>
+                </li>
+              </ul>
+
+              <p class="note" style="margin-top: 12px">
+                Einsatzgebiet: <strong>Baden-Württemberg</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="foot">
+          <div>© <span id="year"></span> Easephoria. Alle Rechte vorbehalten.</div>
+          <div>
+            <a href="mailto:hello@easephoria.com">hello@easephoria.com</a>
+            <span class="sep"> • </span>
+            <a href="#" onclick="alert('Fügen Sie hier Ihre Datenschutzerklärung ein.'); return false;">
+              Datenschutz
+            </a>
+            <span class="sep"> • </span>
+            <a href="#" onclick="alert('Fügen Sie hier Ihr Impressum/AGB ein.'); return false;">
+              Impressum / AGB
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Menu toggle (foldout)
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      function closeMenu(){
+        if(!mobileMenu || !menuBtn) return;
+        mobileMenu.style.display = 'none';
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      function toggleMenu(){
+        if(!mobileMenu || !menuBtn) return;
+        const open = mobileMenu.style.display === 'block';
+        mobileMenu.style.display = open ? 'none' : 'block';
+        menuBtn.setAttribute('aria-expanded', String(!open));
+      }
+
+      if(menuBtn && mobileMenu){
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleMenu();
+        });
+
+        // Close when clicking a menu link
+        mobileMenu.addEventListener('click', (e) => {
+          const a = e.target.closest && e.target.closest('a');
+          if(a) closeMenu();
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+          if(!mobileMenu.contains(e.target) && e.target !== menuBtn) closeMenu();
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+          if(e.key === 'Escape') closeMenu();
+        });
+      }
+
+      // Year
+      const yearEl = document.getElementById('year');
+      if(yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Before/after slider
+      const range = document.getElementById('range');
+      const afterClip = document.getElementById('afterClip');
+      const handle = document.getElementById('handle');
+
+      function setSplit(val){
+        const right = 100 - val;
+        afterClip.style.clipPath = `inset(0 ${right}% 0 0)`;
+        handle.style.left = val + '%';
+      }
+
+      if(range && afterClip && handle){
+        setSplit(range.value);
+        range.addEventListener('input', (e) => setSplit(e.target.value));
+      }
+      // Drag on slider (and tap) to move the split
+      const slider = document.querySelector('.slider');
+
+      function setFromClientX(clientX){
+        if(!slider || !range) return;
+        const rect = slider.getBoundingClientRect();
+        const x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
+        const val = (x / rect.width) * 100;
+
+        range.value = String(val);
+        setSplit(val);
+      }
+
+      if(slider && range && afterClip && handle){
+        let dragging = false;
+
+        slider.addEventListener('pointerdown', (e) => {
+          dragging = true;
+          slider.setPointerCapture(e.pointerId);
+          setFromClientX(e.clientX);
+        });
+
+        slider.addEventListener('pointermove', (e) => {
+          if(!dragging) return;
+          setFromClientX(e.clientX);
+        });
+
+        slider.addEventListener('pointerup', () => { dragging = false; });
+        slider.addEventListener('pointercancel', () => { dragging = false; });
+        slider.addEventListener('pointerleave', () => { dragging = false; });
+      }
+
+      // Lead form -> mailto (no backend required)
+      const form = document.getElementById('leadForm');
+      const status = document.getElementById('formStatus');
+
+      if(form){
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('name').value.trim();
+          const business = document.getElementById('business').value.trim();
+          const city = document.getElementById('city').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          const subject = encodeURIComponent(
+            `Easephoria Angebotsanfrage — ${name}${city ? " ("+city+")" : ""}`
+          );
+
+          const bodyLines = [
+            `Name: ${name}`,
+            `Unternehmen: ${business || "-"}`,
+            `Stadt: ${city || "-"}`,
+            `E-Mail: ${email}`,
+            "",
+            "Projektdetails:",
+            message || "-"
+          ];
+
+          const body = encodeURIComponent(bodyLines.join("\n"));
+
+          window.location.href =
+            `mailto:hello@easephoria.com?subject=${subject}&body=${body}`;
+
+          if(status){
+            status.textContent =
+              "Ihr E-Mail-Programm wird geöffnet… Falls nichts passiert, schreiben Sie an hello@easephoria.com.";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
